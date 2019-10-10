@@ -5,7 +5,7 @@
 
 == Introduction
 
-Welcome to the OpenDevStack. The OpenDevStack is a framework to help in setting up a project infrastructure and continuous delivery processes on OpenShift and Atlassian toolstack with one click. This guide shall help you to setup the OpenDevStack, so you can work with it and test it in a local environment setup. The steps for the setup can also be adapted for running the OpenDevstack with an existing OpenShift installation or to connect it with your Atlassian tools, if you use https://www.atlassian.com/software/crowd[Atlassian Crowd] as SSO provider.
+Welcome to the OpenDevStack. The OpenDevStack is a framework to help in setting up a project infrastructure and continuous delivery processes on OpenShift and Atlassian toolstack with one click. This guide shall help you to setup the OpenDevStack, so you can work with it and test it in a local environment setup. The steps for the setup can also be adapted for running the OpenDevStack with an existing OpenShift installation or to connect it with your Atlassian tools, if you use https://www.atlassian.com/software/crowd[Atlassian Crowd] as SSO provider.
 
 IMPORTANT: The credentials provided in the guide are only meant to be used within the local test installation. For use in production you will have to customize paths, URLs and credentials!*
 
@@ -14,7 +14,7 @@ IMPORTANT: The credentials provided in the guide are only meant to be used withi
 The following requirements have to be met to setup a local environment. You should have a computer with at least 32 GB of RAM, because we are going to install
 several Atlassian tools and a local OpenShift environment.
 
-IMPORTANT: We assume, you will have a full functional internet connection*
+IMPORTANT: We assume, you will have a fully functional internet connection*
 
 === Git
 
@@ -24,9 +24,9 @@ We use Git as code repository, so you have to be familiar to work with https://g
 
 The OpenDevStack uses Vagrant to provide a sample infrastructure for the Atlassian tools, Rundeck and a so called Ansible controller, a VM, where you can run Ansible scripts against the Atlassian VM. It is recommended to use the latest Vagrant version available from the https://www.vagrantup.com[HashiCorp Vagrant page].
 
-=== Virtualbox
+=== VirtualBox
 
-Vagrant uses Virtualbox for running the provisioned VMs. Therefore you must have https://www.virtualbox.org/[Virtualbox] installed.
+Vagrant uses VirtualBox for running the provisioned VMs. Therefore you must have https://www.virtualbox.org/[VirtualBox] installed.
 
 === Atlassian tools licenses
 
@@ -40,7 +40,7 @@ You need licenses for the following products:
 * Crowd
 
 The evaluation licenses are valid for 30 days from the date of purchase. If you need a server id, this will be provided by the tools within the installation,
-so you are able to inlcude the licenses within theinstallation wizards of the tools, after the base setup provided by the Ansible scripts.
+so you are able to include the licenses within the installation wizards of the tools, after the base setup provided by the Ansible scripts.
 
 The base setup uses the following versions:
 
